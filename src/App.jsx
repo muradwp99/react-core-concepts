@@ -2,6 +2,7 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Todo from './Todo'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Student></Student>
       <Device name='Lenovo' price='$7000' ram='Corsair DDR4 8GB'
       ></Device>
+      <Todo task='Learn React' isDone={false}></Todo>
     </>
   )
 }
