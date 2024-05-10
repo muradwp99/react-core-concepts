@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 
 import './App.css'
+import Counter from './Counter'
 // import Todo from './Todo'
 
 function App() {
@@ -41,6 +42,8 @@ function App() {
       {
         singers.map(singer => <Singers key={singer.id} singer= {singer}></Singers>)
       } */}
+
+      <Counter></Counter>
       
       <button onClick={function seeAlert(){
         alert("You Clicked")
