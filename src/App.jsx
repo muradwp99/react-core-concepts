@@ -1,56 +1,73 @@
 /* eslint-disable react/prop-types */
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
-import Todo from './Todo'
+// import Todo from './Todo'
 
 function App() {
 
-  const singers = [
-    {
-      id: '1',
-      name: 'Kumar Sanu',
-      age: '22'
-    },
-    {
-      id:'2',
-      name: 'Kishore Kumar',
-      age: '25'
-    }
-  ]
+  // const singers = [
+  //   {
+  //     id: '1',
+  //     name: 'Kumar Sanu',
+  //     age: '22'
+  //   },
+  //   {
+  //     id:'2',
+  //     name: 'Kishore Kumar',
+  //     age: '25'
+  //   }
+  // ]
+
+  function clickingAlert(){
+    alert("It's an Outside Function")
+  }
+
+
+  function addition(num1, num2){
+    alert(num1 + num2)
+  }
+
+
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
+      
       <h1>Vite + React</h1>
       {/* <Student></Student>
       <Device name='Lenovo' price='$7000' ram='Corsair DDR4 8GB'
       ></Device> */}
-      <Todo task='Learn React' isDone={false}></Todo>
+      {/* <Todo task='Learn React' isDone={false}></Todo>
 
        
       {
         singers.map(singer => <Singers key={singer.id} singer= {singer}></Singers>)
-      }
+      } */}
       
+      <button onClick={function seeAlert(){
+        alert("You Clicked")
+      }}>Inline Function</button>
+      <button onClick={()=>{
+        alert('Yaay You clicked on Array Function')
+      }}>Array Function </button>
+      <button onClick={clickingAlert}>Outside Event</button>
+      <button onClick={()=> addition(5,6)}>Dynamic Alert</button>
+
+
+
+
 
     </>
   )
 }
 
-function Singers({singer}){
-  return <>
-      <h2>{singer.name}</h2>
-      <h4>Age: {singer.age}</h4>
+
+
+// function Singers({singer}){
+//   return <>
+//       <h2>{singer.name}</h2>
+//       <h4>Age: {singer.age}</h4>
   
-  </>
-}
+//   </>
+// }
 
 // function Device(props){
   
