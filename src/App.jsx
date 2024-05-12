@@ -2,6 +2,7 @@
 
 import './App.css'
 import Counter from './Counter'
+import Friends from './Friends'
 // import Todo from './Todo'
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
       } */}
 
       <Counter></Counter>
+      <Friends></Friends>
       
       <button onClick={function seeAlert(){
         alert("You Clicked")
